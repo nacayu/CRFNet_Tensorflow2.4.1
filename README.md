@@ -11,12 +11,14 @@ https://github.com/TUMFTM/CameraRadarFusionNet and https://github.com/upgrados/D
     - tensorflow: 2.4.1
     - keras: 2.2.4
     - Visual Studio 2019:eseential because it need c++ tools for build ext
-This code is tested by us, and there are some problems in the process of installing:
+
+
+This code is tested by us, and there are some **problems** in the process of installing:
 
 1. because the keras2.24 is not compatible with tensorflow2.4.1, when we run "python setup.py build_ext --inplace", there might be a problem named module ‘tensorflow’ has no attribute ‘get_default_graph’
 2. attributeError: module 'tensorflow.python.framework.ops' has no attribute TensorLike
 
-The corresponding answers are here:
+The corresponding **answers** are here:
 
 1. replace "import tensorflow as tf" with the following:
 ```bash
