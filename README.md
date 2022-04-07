@@ -17,6 +17,7 @@ This code is tested by us, and there are some **problems** in the process of ins
 
 1. because the keras2.24 is not compatible with tensorflow2.4.1, when we run "python setup.py build_ext --inplace", there might be a problem named module ‘tensorflow’ has no attribute ‘get_default_graph’
 2. attributeError: module 'tensorflow.python.framework.ops' has no attribute TensorLike
+3. can‘t pickle Environment objects & Ran out of input
 
 The corresponding **answers** are here:
 
@@ -29,6 +30,9 @@ on the top of the error file.
 
 2. find keras/tensorflow_backend.py. Add the following line somewhere at the top amongst the other imports: "from tensorflow.python.types import core as core_tf_types"
 Find the line that returns the error and replace it with this: "return isinstance(x, core_tf_types.Tensor) or tf_ops.is_dense_tensor_like(x)"
+
+3. Because of the Windows operating system, in Windows, multiprocessing multiprocessing uses serialized pickle to transfer data between multiple processes, and socket objects cannot be serialized, but it is no problem on the Linux operating system, because Multiprocessing on linux uses fork, so on windows you can use multithreading instead，so we must change the **num_workers == 0**
+
 
 # CRF-Net for Object Detection (Camera and Radar Fusion Network)
 ![Radar Augmented Image Example](images/imageplus_format.png)
