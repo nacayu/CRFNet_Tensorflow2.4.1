@@ -1,0 +1,26 @@
+############## COMPILED FILES ##############
+*.o
+*.so
+*.pyc
+*.pyd
+
+############## MACHINE SPECIFIC ##############
+.vscode/
+.idea/
+.eggs/
+*.egg-info/
+.DS_Store
+
+############## LOCAL FILES ##############
+saved_models/*
+data/tools/anchor_data/
+
+############## Exceptions ##############
+!configs/neural_filter
+!configs/default.cfg
+!configs/neural_filter/default.json.example
+!configs/README.md
+!images/*.png
+!tb_logs/.gitkeep 
+!saved_models/.gitkeep 
+*.code-workspace

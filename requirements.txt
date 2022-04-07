@@ -1,0 +1,18 @@
+setuptools
+numpy>=1.16.0
+tensorflow-gpu==2.4.1 
+tensorflow-serving-api-gpu==2.4.1 
+opencv-python==3.* 
+keras==2.2.4
+pyquaternion 
+h5py==2.10.0
+Pillow 
+progressbar2 
+bayesian-optimization 
+pandas 
+pyarrow 
+hilbertcurve
+matplotlib
+nuscenes-devkit @ git+https://github.com/Fellfalla/nuscenes-devkit.git@master
+pydot
+keras_resnet
