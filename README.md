@@ -11,6 +11,9 @@ https://github.com/TUMFTM/CameraRadarFusionNet and https://github.com/upgrados/D
     - tensorflow: 2.4.1
     - keras: 2.2.4
     - Visual Studio 2019:eseential because it need c++ tools for build ext
+    - CUDA11.1
+    - CUDNN8.0.4
+
 
 
 This code is tested by us, and there are some **problems** in the process of installing:
