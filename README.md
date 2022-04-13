@@ -17,7 +17,7 @@ https://github.com/TUMFTM/CameraRadarFusionNet and https://github.com/upgrados/D
 
 
 ## Running show
-![image](https://user-images.githubusercontent.com/47105158/163129890-20f4baa1-1dcb-4311-9c47-8d0b76f3ba91.png#pic_center =400x400)
+![image](https://user-images.githubusercontent.com/47105158/163129890-20f4baa1-1dcb-4311-9c47-8d0b76f3ba91.png#pic_center width="300" height="400")
 
 This code is tested by us, and there are some **problems** in the process of installing:
 
