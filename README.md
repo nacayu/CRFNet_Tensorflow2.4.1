@@ -16,6 +16,9 @@ https://github.com/TUMFTM/CameraRadarFusionNet and https://github.com/upgrados/D
 
 
 
+## Running show
+![image](https://user-images.githubusercontent.com/47105158/163129890-20f4baa1-1dcb-4311-9c47-8d0b76f3ba91.png)
+
 This code is tested by us, and there are some **problems** in the process of installing:
 
 1. because the keras2.24 is not compatible with tensorflow2.4.1, when we run "python setup.py build_ext --inplace", there might be a problem named module ‘tensorflow’ has no attribute ‘get_default_graph’
@@ -60,8 +63,6 @@ All required python packages can be installed with the crfnet pip package.  We r
 * `pip install -e .`
 * `python setup.py build_ext --inplace`
 
-## Running show
-![image](https://user-images.githubusercontent.com/47105158/163129890-20f4baa1-1dcb-4311-9c47-8d0b76f3ba91.png)
 
 # CRF-Net Usage
 The network uses camera and radar inputs to detect objects. It can be used with the nuScenes dataset and extended to other radar and camera datasets. The nuScenes dataset can be downloaded [here](https://www.nuscenes.org/download).
