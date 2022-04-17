@@ -16,7 +16,7 @@ https://github.com/TUMFTM/CameraRadarFusionNet and https://github.com/upgrados/D
 
 
 
-## Running show
+## Process of training
 <img src="https://user-images.githubusercontent.com/47105158/163129890-20f4baa1-1dcb-4311-9c47-8d0b76f3ba91.png#pic_center" width="700" height="450"></img>
 
 This code is tested by us, and there are some **problems** in the process of installing:
@@ -39,7 +39,14 @@ Find the line that returns the error and replace it with this: "return isinstanc
 
 3. Because of the Windows operating system, in Windows, multiprocessing multiprocessing uses serialized pickle to transfer data between multiple processes, and socket objects cannot be serialized, but it is no problem on the Linux operating system, because Multiprocessing on linux uses fork, so on windows you can use multithreading instead，so we must change the **num_workers == 0**
 
+## Mark：Their works had many problem:
+1. Training with increasing system memory.
+2. Can not load multi-gpus for training.
+- the main reasion might be my enviroment issues,and issues no.1 are because of tensorflow official problem they had claimed.
+- about other question on windows10 you can take a issues.
 
+---
+# Followings are of paper's autor works
 # CRF-Net for Object Detection (Camera and Radar Fusion Network)
 ![Radar Augmented Image Example](images/imageplus_format.png)
 
