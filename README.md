@@ -38,6 +38,7 @@ on the top of the error file.
 Find the line that returns the error and replace it with this: "return isinstance(x, core_tf_types.Tensor) or tf_ops.is_dense_tensor_like(x)"
 
 3. Because of the Windows operating system, in Windows, multiprocessing multiprocessing uses serialized pickle to transfer data between multiple processes, and socket objects cannot be serialized, but it is no problem on the Linux operating system, because Multiprocessing on linux uses fork, so on windows you can use multithreading instead，so we must change the **num_workers == 0**
+4. When your git clone this repo, you should then change the main folder name to "crfnet",or you might meet a problem when your run "python train_crfnet.py" named "can not found crfnet" although you have run command "pip install -e . & python setup.py build_ext --inplace"
 
 ## Mark：Their works had many problem:
 1. Training with increasing system memory.
